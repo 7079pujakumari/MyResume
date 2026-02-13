@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+</head>
+
+<body class="bg-[#1a0029] dark:bg-slate-900 transition-colors duration-300">
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="sticky top-0 z-50 bg-[#1a0029] dark:bg-slate-900 shadow">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+       
+        <h1 class="text-3xl text-white font-bold">Puja<span class="text-purple-400">.</span></h1>
+
+        <ul class="hidden md:flex items-center gap-10 border border-slate-400 rounded-full px-8 py-3 text-white">
+            <li><a href="#" class="hover:text-slate-300">Home</a></li>
+            <li><a href="#about" class="hover:text-slate-300">About</a></li>
+            <li><a href="#services" class="hover:text-slate-300">Services</a></li>
+            <li><a href="#work" class="hover:text-slate-300">Work</a></li>
+            <li><a href="#contact" class="hover:text-slate-300">Contact</a></li>
+        </ul>
+
+        <div class="hidden md:flex items-center gap-6 text-white">
+            <button id="themeToggleDesktop" class="text-2xl">
+                <i class="ri-sun-line"></i>
+            </button>
+            <a href="#contact" class="px-6 py-2 rounded-full border border-slate-400 hover:bg-gradient-to-r from-purple-500 to-pink-500">Contact <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+
+        <div class="md:hidden flex items-center gap-4 text-white">
+          
+            <button id="themeToggleMobile" class="text-2xl">
+                <i class="ri-sun-line"></i>
+            </button>
+
+            <button id="burger" class="text-3xl">
+                <i id="menuIcon" class="ri-menu-line"></i>
+            </button>
+        </div>
+    </nav>
+
+                 <!-- Mobile Menu -->
+
+    <div id="mobileMenu"
+        class="md:hidden fixed top-20 left-0 w-full h-screen bg-[#621E81] dark:bg-slate-900 flex flex-col items-center justify-center gap-10 text-white text-2xltransform -translate-x-full transition-transform duration-300">
+        <a href="#" class="hover:text-slate-300">Home</a>
+        <a href="#about" class="hover:text-slate-300">About</a>
+        <a href="#services" class="hover:text-slate-300">Services</a>
+        <a href="#work" class="hover:text-slate-300">Work</a>
+        <a href="#contact" class="hover:text-slate-300">Contact</a>
+    </div>
+</header>
+
+<!-- ================= SECOND SECTION ================= -->
+
+<section class="max-w-7xl mx-auto px-6 mt-16 text-center text-white">
+    <img src="puja1.jpg" class="w-40 h-40 mx-auto rounded-full bg-white" alt="profile">
+
+    <h2 class="mt-6 text-3xl md:text-4xl">Hi, I'm Puja 👋🏻</h2>
+    <h1 class="mt-3 text-5xl md:text-7xl font-bold">Frontend Developer</h1>
+    <p class="mt-4 text-lg md:text-xl text-slate-200">I build responsive & modern websites using Tailwind CSS.</p>
+
+    <div class="mt-8 flex flex-col sm:flex-row justify-center gap-6">
+       <a class="border-2 border-slate-500 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full px-7 py-3 ">Contact Me <i class="ri-arrow-right-line"></i></a> <a class="border-2 border-slate-500 hover:bg-gradient-to-r from-purple-500 to-pink-500 rounded-full px-7 py-3 ">My Resume<i class="ri-arrow-down-line"></i></a>
+    </div>
+</section>
+
+<!-- ================= THIRD SECTION ================= --> 
+
+<section id="about" class="max-w-7xl mx-auto px-6 mt-32 text-white">
+    <div class="text-center mb-20">
+        <p class="text-xl tracking-widest text-slate-300">Introduction</p>
+        <h2 class="text-4xl md:text-5xl font-serif mt-2">About me</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div class="relative flex justify-center">
+            <div class="bg-white rounded-[28px] p-4">
+            <img class="w-[280px] h-[380px] object-cover rounded-[20px]" src="puja.jpg" alt=""/>
+        </div>
+        </div>
+
+        <div>
+          <p class="text-lg leading-relaxed text-slate-200 max-w-xl mx-auto text-center md:text-left">I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
+        <div class="border border-white/20 rounded-2xl p-6 bg-white/5 hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+        <i class="ri-code-s-slash-line text-3xl"></i>
+        <h3 class="mt-4 font-semibold text-white">Languages</h3>
+        <p class="mt-2 text-sm text-slate-300"> HTML, CSS, JavaScript<br>React, Next Js</p>
+    </div>
+
+     <div class="border border-white/20 rounded-2xl p-6 bg-white/5 hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+        <i class="ri-graduation-cap-line text-3xl"></i>
+        <h3 class="mt-4 font-semibold text-white">Education</h3>
+        <p class="mt-2 text-sm text-slate-300"></p> B.Tech in Computer Science</p>
+    </div>
+
+    <div class="border border-white/20 rounded-2xl p-6 bg-white/5 hover:shadow-xl hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+        <i class="ri-briefcase-line text-3xl"></i>
+        <h3 class="mt-4 font-semibold text-white">Projects</h3>
+        <p class="mt-2 text-sm text-slate-300">Built more than 10 projects</p>
+    </div>
+</div>
+
+       <div class="mt-14 max-w-xl mx-auto">
+  <p class="text-sm text-slate-300 mb-4">Tools i use</p>
+
+  <div class="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-8 gap-5">
+   
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="vs.png" alt="VS Code" class="w-8 h-8" />
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="boot.png" alt="Bootstrap" class="w-8 h-8" />
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="c.png" alt="C Language" class="w-8 h-8"/>
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="canava.png" alt="Canva" class="w-8 h-8"/>
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="css.png" alt="CSS" class="w-8 h-8"/>
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="excel.png" alt="Excel" class="w-8 h-8"/>
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="fg.png" alt="Figma" class="w-8 h-8"/>
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="gsap.png" alt="GSAP" class="w-8 h-8"/>
+    </div>
+
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="html.png" alt="HTML" class="w-8 h-8"/>
+    </div>
+
+    
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="ppt.png" alt="PowerPoint" class="w-8 h-8"/>
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="tail.png" alt="Tailwind CSS" class="w-8 h-8"/>
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="vb.png" alt="Visual Basic" class="w-8 h-8"/>
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="vm.png" alt="VMware" class="w-8 h-8"/>
+    </div>
+    <div class="w-12 h-12 flex items-center justify-center border border-white/20 rounded-xl bg-white/5 hover:bg-white/10 transition duration-300 ease-in-out cursor-pointer">
+      <img src="word.png" alt="Word" class="w-6 h-6"/>
+    </div>
+  </div>
+</div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FOURTH SECTION ================= --> 
+ <section id="services" class="max-w-7xl mx-auto px-6 mt-32 text-white">
+  <div class="text-center mb-20">
+    <p class="text-sm tracking-widest text-slate-300 uppercase">What I offer</p>
+    <h2 class="text-4xl md:text-5xl font-serif mt-2">My services</h2>
+    <p class="mt-4 text-slate-300 max-w-2xl mx-auto">I am a frontend developer with experience in building modern,
+    responsive and user-friendly interfaces.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <div class="border border-white/20 rounded-3xl p-8 bg-white/5
+                hover:bg-white/10 transition duration-300">
+      <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-pink-500 mb-6">
+        <i class="ri-global-line text-2xl"></i>
+      </div>
+
+      <h3 class="text-xl font-semibold mb-3">Web Design</h3>
+      <p class="text-slate-300 text-sm leading-relaxed">Web development is the process of building, programming and maintaining websites. </p>
+      <a href="#" class="inline-flex items-center gap-2 mt-6 text-sm">Read more
+      <i class="ri-arrow-right-line"></i>
+      </a>
+    </div>
+
+    <div class="border border-white/20 rounded-3xl p-8 bg-white/5 hover:bg-white/10 transition duration-300">
+      <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-pink-500 mb-6">
+        <i class="ri-smartphone-line text-2xl"></i>
+      </div>
+
+      <h3 class="text-xl font-semibold mb-3">Mobile App</h3>
+      <p class="text-slate-300 text-sm leading-relaxed">I build responsive mobile-friendly web applications with clean UI.
+      </p>
+      <a href="#" class="inline-flex items-center gap-2 mt-6 text-sm">Read mode
+        <i class="ri-arrow-right-line"></i>
+      </a>
+    </div>
+
+    <div class="border border-white/20 rounded-3xl p-8 bg-white/5 hover:bg-white/10 transition duration-300">
+      <div class="w-12 h-12 flex items-center justify-center rounded-xl  bg-pink-500 mb-6">
+        <i class="ri-pencil-ruler-2-line text-2xl"></i>
+      </div>
+
+      <h3 class="text-xl font-semibold mb-3">UI / UX Design</h3>
+      <p class="text-slate-300 text-sm leading-relaxed">Creating clean, modern and user-focused
+    interface designs.</p>
+      <a href="#" class="inline-flex items-center gap-2 mt-6 text-sm"> Read more
+        <i class="ri-arrow-right-line"></i>
+      </a>
+    </div>
+
+    
+    <div class="border border-white/20 rounded-3xl p-8 bg-white/5 hover:bg-white/10 transition duration-300">
+      <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-pink-500 mb-6">
+        <i class="ri-image-line text-2xl"></i>
+      </div>
+
+      <h3 class="text-xl font-semibold mb-3">Graphic Design</h3>
+      <p class="text-slate-300 text-sm leading-relaxed">Designing creative graphics, banners and visual assets.
+      </p>
+      <a href="#" class="inline-flex items-center gap-2 mt-6 text-sm">Read more 
+    <i class="ri-arrow-right-line"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FIFTH SECTION ================= -->
+
+<section id="work" class="max-w-7xl mx-auto px-6 mt-32 text-white">
+  <div class="text-center mb-16">
+    <p class="text-slate-300 tracking-widest">My portfolio</p>
+    <h2 class="text-4xl md:text-5xl font-serif mt-2">My latest work</h2>
+    <p class="mt-4 text-slate-300 max-w-2xl mx-auto">Welcome to my web development portfolio! Explore a collection of projects
+    showcasing my expertise in front-end development.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+    <div class="relative rounded-2xl overflow-hidden group">
+        <a href="https://7079pujakumari.github.io/Pulse/" target="_blank">
+          <img src="img1.png" class="w-full h-64 object-cover hover:scale-105 transition duration-300" alt="">
+          </a>
+    </div>
+
+    <div class="relative rounded-2xl overflow-hidden group">
+      <a href="https://7079pujakumari.github.io/Bonsai/" target="_blank">
+          <img src="img2.png" class="w-full h-64 object-cover hover:scale-105 transition duration-300" alt="">
+          </a>
+    </div>
+
+    <div class="relative rounded-2xl overflow-hidden group">
+      <a href="https://7079pujakumari.github.io/Protfolio/" target="_blank">
+          <img src="img3.png" class="w-full h-64 object-cover hover:scale-105 transition duration-300" alt="">
+          </a>
+    </div>
+
+    <div class="relative rounded-2xl overflow-hidden group">
+      <a href="https://7079pujakumari.github.io/Coffeee/"  target="_blank">
+          <img src="img4.png" class="w-full h-64 object-cover hover:scale-105 transition duration-300" alt="">
+          </a>
+     
+      
+        
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-16 flex justify-center">
+    <a href="#" class="px-8 py-3 rounded-full border border-white/30 hover:bg-gradient-to-r from-purple-500 to-pink-500 transition">Show more →</a>
+  </div>
+</section>
+
+ <!-- ================= SIXTH SECTION ================= -->
+<section id="contact" class="max-w-7xl mx-auto px-6 mt-32 text-white">
+  
+  <div class="text-center mb-16">
+    <p class="text-slate-300 tracking-widest">Connect with me</p>
+    <h2 class="text-4xl md:text-5xl font-serif mt-2">Get in touch</h2>
+    <p class="mt-4 text-slate-300 max-w-2xl mx-auto"> I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+  </div>
+
+  <form class="max-w-4xl mx-auto space-y-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <input type="text" placeholder="Enter your name" class="w-full bg-transparent border border-white/30 rounded-xl px-6 py-4 text-white placeholder-slate-400 focus:outline-none focus:border-purple-400 transition"/>
+
+      <input type="email" placeholder="Enter your email" class="w-full bg-transparent border border-white/30 rounded-xl px-6 py-4 text-white placeholder-slate-400 focus:outline-none focus:border-purple-400 transition"/>
+    </div>
+
+    <textarea rows="6" placeholder="Enter your message" class="w-full bg-transparent border border-white/30 rounded-xl px-6 py-4 text-white placeholder-slate-400 focus:outline-none focus:border-purple-400 transition resize-none" >
+    </textarea>
+   
+    <div class="flex justify-center pt-6">
+      <button class="px-10 py-3 rounded-full border border-white/30 hover:bg-gradient-to-r from-purple-500 to-pink-500
+       transition text-white"> Submit now →</button>
+    </div>
+  </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="mt-32 text-white">
+  <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+
+    <h2 class="text-4xl font-bold">Puja<span class="text-purple-400">.</span></h2>
+
+    <p class="mt-4 flex justify-center items-center gap-2 text-slate-300">
+      <i class="ri-mail-line"></i>18enjel123@gmail.com</p>
+
+    <div class="my-12 border-t border-white/20"></div>
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-300">
+      <p>© 2026 PrebuiltUI · Distributed by ThemeWagon · All rights reserved.</p>
+      <div class="flex gap-8 text-white">
+        <a href="#" class="hover:text-purple-400 transition">GitHub</a>
+        <a href="#" class="hover:text-purple-400 transition">LinkedIn</a>
+        <a href="#" class="hover:text-purple-400 transition">Twitter</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+<!-- ================= SCRIPT ================= -->
+
+
+<script>
+     
+    const burger = document.getElementById("burger");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const menuIcon = document.getElementById("menuIcon");
+
+    burger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("-translate-x-full");
+        menuIcon.classList.toggle("ri-menu-line");
+        menuIcon.classList.toggle("ri-close-line");
+    });
+
+    tailwind.config = {
+            darkMode: 'class'
+        } 
+
+
+    const toggleButtons = [
+        document.getElementById("themeToggleDesktop"),
+        document.getElementById("themeToggleMobile")
+    ];
+
+    toggleButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.documentElement.classList.toggle("dark");
+
+            document.querySelectorAll(
+                "#themeToggleDesktop i, #themeToggleMobile i"
+            ).forEach(icon => {
+                icon.classList.toggle("ri-sun-line");
+                icon.classList.toggle("ri-moon-line");
+            });
+        });
+    });
+
+
+
+   
+    
+    
+</script>
+
+</body>
+</html>
